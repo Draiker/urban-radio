@@ -283,7 +283,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .wrap {
 	min-height: 100%;
 	text-align: center;
-	background: #263856 url("bg.jpg") center center no-repeat;
+	background: #adadad url("bg.jpg") center center no-repeat;
 	overflow: auto;
 	padding-bottom: 94px
 }
@@ -540,13 +540,13 @@ transform:scale(1)
 .banner__radio {
 	width: 100%;
 	height: 559px;
-	background: url("radio.png") center center no-repeat;
+	background: none; /*url("radio.png") center center no-repeat;*/
 	z-index: 2
 }
 .banner__equalizer {
 	height: 94px;
 	width: 100%;
-	background: url("equalizer.png") center center no-repeat;
+	background: none; /*url("equalizer.png") center center no-repeat;*/
 	position: absolute;
 	top: 175px
 }
