@@ -283,17 +283,18 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .wrap {
 	min-height: 100%;
 	text-align: center;
-	background: #adadad url("bg.jpg") center center no-repeat;
+	background: #adadad url("../img/bg.jpg") center center no-repeat;
 	overflow: auto;
 	padding-bottom: 94px
 }
 
 @media (max-width:940px) {
-.wrap {
-	overflow: hidden;
-	padding-bottom: 131px
+	.wrap {
+		overflow: hidden;
+		padding-bottom: 131px
+	}
 }
-}
+/*
 .additional-players {
 	float: right;
 	margin: 30px 30px 0 0
@@ -306,29 +307,31 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	margin-left: 10px
 }
 .ap-tunein {
-	background: url("play-tunin.png");
+	background: url("../img/play-tunin.png");
 }
 .ap-winamp {
-	background: url("play-winamp.png");
+	background: url("../img/play-winamp.png");
 }
-
+*/
+/*
 @media (max-width:940px) {
-.additional-players {
-	margin: 15px 15px 0 0
+	.additional-players {
+		margin: 15px 15px 0 0
+	}
 }
-}
+*/
 .main-logo {
 	width: 246px;
 	height: 93px;
-	background: url("main-logo.png");
+	background: url("../img/main-logo.png");
 	text-indent: -99999px;
 	margin: 38px auto 83px
 }
 
 @media (max-width:940px) {
-.main-logo {
-	margin: 70px auto 50px
-}
+	.main-logo {
+		margin: 70px auto 50px
+	}
 }
 .h-player {
 	background-color: rgba(0,0,0,.5);
@@ -361,7 +364,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .h-player__btn {
 	width: 193px;
 	height: 193px;
-	background: url("big-btn.png");
+	background: url("../img/big-btn.png");
 	left: -35.5px;
 	top: -35.5px;
 	cursor: pointer;
@@ -376,7 +379,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	background: url("big-btn-halo.png") center center no-repeat;
+	background: url("../img/big-btn-halo.png") center center no-repeat;
 	background-size: cover;
 	width: 245px;
 	height: 245px;
@@ -540,25 +543,25 @@ transform:scale(1)
 .banner__radio {
 	width: 100%;
 	height: 559px;
-	background: none; /*url("radio.png") center center no-repeat;*/
+	background: none; /*url("../img/radio.png") center center no-repeat;*/
 	z-index: 2
 }
 .banner__equalizer {
 	height: 94px;
 	width: 100%;
-	background: none; /*url("equalizer.png") center center no-repeat;*/
+	background: none; /*url("../img/equalizer.png") center center no-repeat;*/
 	position: absolute;
 	top: 175px
 }
 
 @media (max-width:940px) {
-.banner__radio {
-	height: 200px;
-	background-size: auto 100%
-}
-.banner__equalizer {
-	display: none
-}
+	.banner__radio {
+		height: 200px;
+		background-size: auto 100%
+	}
+	.banner__equalizer {
+		display: none
+	}
 }
 .socials {
 	z-index: 5;
@@ -566,7 +569,32 @@ transform:scale(1)
 	left: 5px;
 	top: 5px
 }
-.soc-fb, .soc-tw, .soc-gplus, .soc-youtube, .soc-mixcloud, .soc-instagram, .soc-4sqr {
+
+.ap-tunein, .ap-winamp {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-left: 10px
+}
+.ap-tunein {
+	background: url("../img/play-tunin.png");
+}
+.ap-winamp {
+	background: url("../img/play-winamp.png");
+}
+
+
+
+.soc-fb,
+.soc-tw,
+.soc-gplus,
+.soc-youtube,
+.soc-mixcloud,
+.soc-instagram,
+.soc-4sqr,
+.ap-tunein,
+.ap-winamp {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -576,7 +604,15 @@ transform:scale(1)
 	z-index: 1;
 	overflow: visible
 }
-.soc-fb:before, .soc-tw:before, .soc-gplus:before, .soc-youtube:before, .soc-mixcloud:before, .soc-instagram:before, .soc-4sqr:before {
+.soc-fb:before,
+.soc-tw:before,
+.soc-gplus:before,
+.soc-youtube:before,
+.soc-mixcloud:before,
+.soc-instagram:before,
+.soc-4sqr:before,
+.ap-tunein:before,
+.ap-winamp:before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -592,65 +628,81 @@ transform:scale(1)
 	-webkit-transition: all .3s;
 	transition: all .3s
 }
-.soc-fb:hover:before, .soc-tw:hover:before, .soc-gplus:hover:before, .soc-youtube:hover:before, .soc-mixcloud:hover:before, .soc-instagram:hover:before, .soc-4sqr:hover:before {
+.soc-fb:hover:before,
+.soc-tw:hover:before,
+.soc-gplus:hover:before,
+.soc-youtube:hover:before,
+.soc-mixcloud:hover:before,
+.soc-instagram:hover:before,
+.soc-4sqr:hover:before,
+.ap-tunein:hover:before,
+.ap-winamp:hover:before {
 	width: 64px;
 	height: 64px;
 	opacity: 1
 }
 .soc-fb {
-	background: #0a83d7 url("socials/fb.png") center center no-repeat;
+	background: #0a83d7 url("../img/socials/fb.png") center center no-repeat;
 }
 .soc-fb:before {
-	background-image: url("socials/fb-holo.png");
+	background-image: url("../img/socials/fb-holo.png");
 }
 .soc-tw {
-	background: #00bff6 url("socials/tw.png") center center no-repeat;
+	background: #00bff6 url("../img/socials/tw.png") center center no-repeat;
 }
 .soc-tw:before {
-	background-image: url("socials/tw-holo.png");
+	background-image: url("../img/socials/tw-holo.png");
 }
 .soc-gplus {
-	background: #ff2424 url("socials/gplus.png") center center no-repeat;
+	background: #ff2424 url("../img/socials/gplus.png") center center no-repeat;
 }
 .soc-gplus:before {
-	background-image: url("socials/gplus-holo.png");
+	background-image: url("../img/socials/gplus-holo.png");
 }
 .soc-youtube {
-	background: #f10000 url("socials/youtube.png") center center no-repeat;
+	background: #f10000 url("../img/socials/youtube.png") center center no-repeat;
 }
 .soc-youtube:before {
-	background-image: url("socials/youtube-holo.png");
+	background-image: url("../img/socials/youtube-holo.png");
 }
 .soc-4sqr {
-	background: #f84675 url("socials/4sqr.png") center center no-repeat;
+	background: #f84675 url("../img/socials/4sqr.png") center center no-repeat;
 }
 .soc-4sqr:before {
-	background-image: url("socials/4sqr-holo.png");
+	background-image: url("../img/socials/4sqr-holo.png");
 }
 .soc-mixcloud {
-	background: #44B6B6 url("socials/mixcloud.png") center center no-repeat;
+	background: #44B6B6 url("../img/socials/mixcloud.png") center center no-repeat;
 }
 .soc-mixcloud:before {
-	background-image: url("socials/mixcloud-holo.png");
+	background-image: url("../img/socials/mixcloud-holo.png");
 }
 .soc-instagram {
-	background: #156193 url("socials/instagram.png") center center no-repeat;
+	background: #156193 url("../img/socials/instagram.png") center center no-repeat;
 }
 .soc-instagram:before {
-	background-image: url("socials/instagram-holo.png");
+	background-image: url("../img/socials/instagram-holo.png");
 }
 
 @media (max-width:940px) {
-.socials {
-	margin: -40px 0 40px;
-	text-align: center;
-	position: relative;
-	top: auto;
-	left: auto
-}
-.soc-fb, .soc-tw, .soc-gplus, .soc-youtube, .soc-mixcloud, .soc-instagram, .soc-4sqr {
-	display: inline-block
-}
+	.socials {
+		margin: -40px 0 40px;
+		text-align: center;
+		position: relative;
+		top: auto;
+		left: auto
+	}
+	.soc-fb,
+	.soc-tw,
+	.soc-gplus,
+	.soc-youtube,
+	.soc-mixcloud,
+	.soc-instagram,
+	.soc-4sqr,
+	.ap-tunein,
+	.ap-winamp {
+		display: inline-block
+	}
 }
 .partners {
 	text-align: center;
@@ -664,13 +716,13 @@ transform:scale(1)
 	display: inline-block
 }
 .partner-warm-city {
-	background: url("warm-city.png") center center no-repeat;
+	background: url("../img/warm-city.png") center center no-repeat;
 }
 .partner-m-joy {
-	background: url("m-joy.png") center center no-repeat;
+	background: url("../img/m-joy.png") center center no-repeat;
 }
 .partner-us-100 {
-	background: url("us-100.png") center center no-repeat;
+	background: url("../img/us-100.png") center center no-repeat;
 }
 
 @media (max-width:940px) {
@@ -687,31 +739,22 @@ transform:scale(1)
 	z-index: 5;
 	overflow: hidden
 }
-.col_1_of_2 {
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	position: relative
-}
-.main-footer__left {
+.main-footer-text {
+	margin: 0 auto;
 	font-size: 12px;
 	color: #adadad;
-	line-height: 2
+	line-height: 2;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	text-align: center;
 }
 .made_in {
 	margin-top: 10px;
 	padding-left: 22px;
-  background: url("if-logo.png") left center no-repeat;
-}
-.main-footer__right {
-	text-align: right
-}
-.webmil {
-	margin-top: 20px;
-	display: inline-block;
-	width: 39px;
-	height: 28px;
-  background: url("webmil.png") center center no-repeat;
+	background: url("../img/if-logo.png") left center no-repeat;
+	background-position-x: calc(50vw - 110px);
 }
 
 @media (max-width:940px) {
