@@ -2,10 +2,11 @@
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
 }
 body {
-	margin: 0
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block
@@ -148,7 +149,6 @@ body {
 	-webkit-font-smoothing: antialiased
 }
 *, *:before, *:after {
-	box-sizing: border-box
 }
 html, body {
 	height: 100%
@@ -731,7 +731,7 @@ transform:scale(1)
 }
 }
 .main-footer {
-	background-color: #141928;
+	background-color: #1a1a1a;
 	min-height: 94px;
 	padding: 15px 30px;
 	margin-top: -94px;
