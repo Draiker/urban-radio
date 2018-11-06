@@ -330,7 +330,10 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 
 @media (max-width:940px) {
 	.main-logo {
-		margin: 70px auto 50px
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px
 	}
 }
 .h-player {
@@ -529,40 +532,28 @@ transform:scale(1)
 }
 
 @media (max-width:450px) {
-.h-player {
-	margin-left: -20px
-}
-.h-player__desc {
-	margin-left: 180px;
-	width: 180px
-}
-}
-.banner, .banner__radio {
-	position: relative
-}
-.banner__radio {
-	width: 100%;
-	height: 559px;
-	background: none; /*url("../img/radio.png") center center no-repeat;*/
-	z-index: 2
-}
-.banner__equalizer {
-	height: 94px;
-	width: 100%;
-	background: none; /*url("../img/equalizer.png") center center no-repeat;*/
-	position: absolute;
-	top: 175px
+	.h-player {
+		margin-left: -20px
+	}
+	.h-player__desc {
+		margin-left: 180px;
+		width: 180px
+	}
 }
 
-@media (max-width:940px) {
-	.banner__radio {
-		height: 200px;
-		background-size: auto 100%
-	}
-	.banner__equalizer {
-		display: none
-	}
+.programs {
+	padding-left: 0px;
+	padding-right: 0px;
 }
+.week {
+	margin: 100px 0 50px;
+	z-index: 2
+}
+.day {
+	height: calc(100vw / 4);
+	border: 1px #c1c1c1 solid;
+}
+
 .socials {
 	z-index: 5;
 	position: absolute;
@@ -686,11 +677,14 @@ transform:scale(1)
 
 @media (max-width:940px) {
 	.socials {
-		margin: -40px 0 40px;
-		text-align: center;
-		position: relative;
-		top: auto;
-		left: auto
+	margin-top: 20px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 40px;
+	text-align: center;
+	position: relative;
+	top: auto;
+	left: auto
 	}
 	.soc-fb,
 	.soc-tw,
@@ -706,8 +700,8 @@ transform:scale(1)
 }
 .partners {
 	text-align: center;
-	margin: -80px 0 100px;
 	position: relative;
+	margin-bottom: 50px;
 	z-index: 5
 }
 .partner-warm-city, .partner-m-joy, .partner-us-100 {
@@ -758,17 +752,38 @@ transform:scale(1)
 }
 
 @media (max-width:940px) {
-.main-footer {
-	margin-top: -94px;
-	padding: 15px
+	.main-footer {
+		margin-top: -94px;
+		padding: 15px
+	}
+	.main-footer__left, .main-footer__right {
+		left: 0
+	}
+	.main-footer__left {
+		width: 85%
+	}
+	.main-footer__right {
+		width: 15%
+	}
 }
-.main-footer__left, .main-footer__right {
-	left: 0
+.ui-loader {
+	display: none;
 }
-.main-footer__left {
-	width: 85%
+
+.w1-day1 {
+	background: url("../img/programs/pr1/w1.jpg");
 }
-.main-footer__right {
-	width: 15%
+.w1-day2 {
+	background: url("../img/programs/pr2/w1.jpg");
 }
+.w1-day3 {
+	background: url("../img/programs/pr3/w1.jpg");
+}
+.w1-day4 {
+	background: url("../img/programs/pr4/w1.jpg");
+}
+.day {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
