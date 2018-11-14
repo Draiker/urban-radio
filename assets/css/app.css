@@ -761,10 +761,10 @@ transform:scale(1)
 .programs {
 	padding-left: 0px;
 	padding-right: 0px;
+	margin: 100px 0 50px;
 }
 .week {
-	margin: 100px 0 50px;
-	z-index: 2
+	/*z-index: 2;*/
 }
 
 #w1_day1 {
@@ -782,6 +782,43 @@ transform:scale(1)
 #w1_day4 {
 	background: url("../img/programs/pr4/w1.jpg");
 	background-size: contain;
+}
+#w2_day2 {
+	background: url("../img/programs/pr2/w2.jpg");
+	background-size: contain;
+}
+#w2_day3 {
+	background: url("../img/programs/pr3/w2.jpg");
+	background-size: contain;
+}
+#w2_day4 {
+	background: url("../img/programs/pr4/w2.jpg");
+	background-size: contain;
+}
+#w3_day1 {
+	background: url("../img/programs/pr1/w1.jpg");
+	background-size: contain;
+}
+#w3_day3 {
+	background: url("../img/programs/pr3/w1.jpg");
+	background-size: contain;
+}
+#w3_day4 {
+	background: url("../img/programs/pr4/w1.jpg");
+	background-size: contain;
+}
+#w1_day1,
+#w1_day2,
+#w1_day3,
+#w1_day4,
+#w2_day2,
+#w2_day3,
+#w2_day4,
+#w3_day1,
+#w3_day3,
+#w3_day4 {
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .day {
 	padding-right: 0px;
@@ -819,4 +856,17 @@ transform:scale(1)
 	color: #fff;
 	bottom: 0;
 	position: absolute;
+}
+
+/* carousel */
+.carousel-indicators {
+    top: -30px !important;
+	bottom: unset !important;
+}
+.carousel-control {
+    width: 2% !important;
+}
+.carousel-control.left,
+.carousel-control.right {
+	background: none;
 }
