@@ -27,7 +27,7 @@
 				<a href="http://tunein.com/radio/Urban-Space-Radio-s246403" data-tooltip="Слухати в TuneIn" target="_blank" class="ap-tunein"></a>
 				<a href="http://stream.mjoy.ua:8000/urban-space-radio-aac.m3u" data-tooltip="Слухати в плеєрі" target="_blank" class="ap-winamp"></a>
 			</div>
-			<h1 class="main-logo">UrbanSpace Radio</h1>
+			<h1 class="main-logo">Urban Space Radio</h1>
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 			<div id="jp_container_1" role="application" aria-label="media player" class="h-player jp-audio-stream">
 				<div class="h-black"></div>
@@ -43,12 +43,46 @@
 				</div>
 				<div class="jp-no-solution">Оновіть браузер</div>
 			</div>
-			<div class="programs container-fluid">
-				<div class="week row">
-					<div class="day w1-day1 col-xs-12 col-sm-6 col-md-3"></div>
-					<div class="day w1-day2 col-xs-12 col-sm-6 col-md-3"></div>
-					<div class="day w1-day3 col-xs-12 col-sm-6 col-md-3"></div>
-					<div class="day w1-day4 col-xs-12 col-sm-6 col-md-3"></div>
+			<div class="programs container-fluid" id="programs_cal">
+				<div class="week row" id="w1">
+					<div class="day col-xs-12 col-sm-6 col-md-3" id="w1_day1">
+						<div class="textbox">
+							<div class="wday">Пн</div>
+							<div class="date">29.Жов</div>
+							<div class="program">Slow Time</div>
+							<div class="author">Тарас Малий</div>
+							<div class="guest">Роман Малиновський і Курт Воннеґут</div>
+							<div class="about">Трохи менше любові</div>
+						</div>
+					</div>
+					<div class="day col-xs-12 col-sm-6 col-md-3" id="w1_day2">
+						<div class="textbox">
+							<div class="wday">Вт</div>
+							<div class="date">30.Жов</div>
+							<div class="program">Пошепки</div>
+							<div class="author">Анна Шийчук</div>
+							<div class="about">Вдячність і злість</div>
+						</div>
+
+					</div>
+					<div class="day col-xs-12 col-sm-6 col-md-3" id="w1_day3">
+						<div class="textbox">
+							<div class="wday">Ср</div>
+							<div class="date">31.Жов</div>
+							<div class="program">Вчора</div>
+							<div class="author">Мох та Прохасько</div>
+							<div class="about">Історія пам’яті</div>
+						</div>
+					</div>
+					<div class="day col-xs-12 col-sm-6 col-md-3" id="w1_day4">
+						<div class="textbox">
+							<div class="wday">Чт</div>
+							<div class="date">01.Лис</div>
+							<div class="program">50 відтінків музики</div>
+							<div class="author">Юрій Іздрик</div>
+							<div class="about">Улюблені дуети</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="partners">
@@ -66,14 +100,25 @@
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js" media="handheld"></script>
 		<script src="assets/js/jplayer/jquery.jplayer.min.js"></script>
 		<script src="assets/js/fastclick.js"></script>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 		<script type="text/javascript">
-			$(document).ready(function(){
+			$.easing.def = "easeOutQuart";
 			
+			function programTextShow( event ) {
+					$(this).find('.textbox')
+						.slideToggle(300, "easeOutQuart");
+			}
+			
+			$(document).ready(function(){
+				
+				$("#programs_cal").on("mouseenter", ".day", programTextShow);
+				$("#programs_cal").on("mouseleave", ".day", programTextShow);
+				
 				var e = $(".js-singer"),
 					t = $(".js-song"),
 					n = void 0,
