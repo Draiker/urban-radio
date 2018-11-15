@@ -988,3 +988,8 @@ a.carousel-control.right {
 .carousel-control.right {
 	background: none;
 }
+@media only screen and (max-width: 991px) {
+	.carousel-control {
+		display: none;
+	}
+}
