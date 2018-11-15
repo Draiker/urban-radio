@@ -283,16 +283,16 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .wrap {
 	min-height: 100%;
 	text-align: center;
-	background: #adadad url("../img/bg.jpg") center center no-repeat;
+	background: #adadad url("../img/bg.jpg") top center no-repeat;
 	overflow: auto;
 	padding-bottom: 94px
 }
 
 @media (max-width:940px) {
-	.wrap {
-		overflow: hidden;
-		padding-bottom: 131px
-	}
+.wrap {
+	overflow: hidden;
+	padding-bottom: 131px
+}
 }
 /*
 .additional-players {
@@ -329,12 +329,12 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 @media (max-width:940px) {
-	.main-logo {
+.main-logo {
 	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 50px
-	}
+}
 }
 .h-player {
 	background-color: rgba(0,0,0,.5);
@@ -510,20 +510,27 @@ transform:scale(1)
 	transform: translateY(-50%);
 	margin-top: -5px
 }
-.h-player__now-title {
+.h-player__now-title,
+.wday,
+.date {
 	color: #2bc5b9;
 	font-size: 14px;
 	font-weight: 400;
 	margin-bottom: 8px
 }
-.h-player__now-singer-and-song {
+.h-player__now-singer-and-song,
+.program,
+.about,
+.guest {
 	color: #fff;
 	font-weight: 700
 }
-.h-player__now-singer {
+.h-player__now-singer,
+.program {
 	font-size: 20px
 }
-.h-player__now-song {
+.h-player__now-song,
+.about {
 	margin-top: 2px;
 	font-size: 16px
 }
@@ -532,22 +539,20 @@ transform:scale(1)
 }
 
 @media (max-width:450px) {
-	.h-player {
-		margin-left: -20px
-	}
-	.h-player__desc {
-		margin-left: 180px;
-		width: 180px
-	}
+.h-player {
+	margin-left: -20px
 }
-
+.h-player__desc {
+	margin-left: 180px;
+	width: 180px
+}
+}
 .socials {
 	z-index: 5;
 	position: absolute;
 	left: 5px;
 	top: 5px
 }
-
 .ap-tunein, .ap-winamp {
 	border-radius: 50%;
 	width: 40px;
@@ -561,18 +566,7 @@ transform:scale(1)
 .ap-winamp {
 	background: url("../img/play-winamp.png");
 }
-
-
-
-.soc-fb,
-.soc-tw,
-.soc-gplus,
-.soc-youtube,
-.soc-mixcloud,
-.soc-instagram,
-.soc-4sqr,
-.ap-tunein,
-.ap-winamp {
+.soc-fb, .soc-tw, .soc-gplus, .soc-youtube, .soc-mixcloud, .soc-instagram, .soc-4sqr, .ap-tunein, .ap-winamp {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -582,15 +576,7 @@ transform:scale(1)
 	z-index: 1;
 	overflow: visible
 }
-.soc-fb:before,
-.soc-tw:before,
-.soc-gplus:before,
-.soc-youtube:before,
-.soc-mixcloud:before,
-.soc-instagram:before,
-.soc-4sqr:before,
-.ap-tunein:before,
-.ap-winamp:before {
+.soc-fb:before, .soc-tw:before, .soc-gplus:before, .soc-youtube:before, .soc-mixcloud:before, .soc-instagram:before, .soc-4sqr:before, .ap-tunein:before, .ap-winamp:before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -606,15 +592,7 @@ transform:scale(1)
 	-webkit-transition: all .3s;
 	transition: all .3s
 }
-.soc-fb:hover:before,
-.soc-tw:hover:before,
-.soc-gplus:hover:before,
-.soc-youtube:hover:before,
-.soc-mixcloud:hover:before,
-.soc-instagram:hover:before,
-.soc-4sqr:hover:before,
-.ap-tunein:hover:before,
-.ap-winamp:hover:before {
+.soc-fb:hover:before, .soc-tw:hover:before, .soc-gplus:hover:before, .soc-youtube:hover:before, .soc-mixcloud:hover:before, .soc-instagram:hover:before, .soc-4sqr:hover:before, .ap-tunein:hover:before, .ap-winamp:hover:before {
 	width: 64px;
 	height: 64px;
 	opacity: 1
@@ -663,7 +641,7 @@ transform:scale(1)
 }
 
 @media (max-width:940px) {
-	.socials {
+.socials {
 	margin-top: 20px;
 	margin-right: 0;
 	margin-left: 0;
@@ -672,18 +650,10 @@ transform:scale(1)
 	position: relative;
 	top: auto;
 	left: auto
-	}
-	.soc-fb,
-	.soc-tw,
-	.soc-gplus,
-	.soc-youtube,
-	.soc-mixcloud,
-	.soc-instagram,
-	.soc-4sqr,
-	.ap-tunein,
-	.ap-winamp {
-		display: inline-block
-	}
+}
+.soc-fb,  .soc-tw,  .soc-gplus,  .soc-youtube,  .soc-mixcloud,  .soc-instagram,  .soc-4sqr,  .ap-tunein,  .ap-winamp {
+	display: inline-block
+}
 }
 .partners {
 	text-align: center;
@@ -739,34 +709,32 @@ transform:scale(1)
 }
 
 @media (max-width:940px) {
-	.main-footer {
-		margin-top: -94px;
-		padding: 15px
-	}
-	.main-footer__left, .main-footer__right {
-		left: 0
-	}
-	.main-footer__left {
-		width: 85%
-	}
-	.main-footer__right {
-		width: 15%
-	}
+.main-footer {
+	margin-top: -94px;
+	padding: 15px
+}
+.main-footer__left, .main-footer__right {
+	left: 0
+}
+.main-footer__left {
+	width: 85%
+}
+.main-footer__right {
+	width: 15%
+}
 }
 .ui-loader {
 	display: none;
 }
-
-
 .programs {
 	padding-left: 0px;
 	padding-right: 0px;
 	margin: 100px 0 50px;
 }
 .week {
-	/*z-index: 2;*/
+	padding-top: 50px;
 }
-
+/*
 #w1_day1 {
 	background: url("../img/programs/pr1/w1.jpg");
 	background-size: contain;
@@ -820,6 +788,7 @@ transform:scale(1)
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+*/
 .day {
 	padding-right: 0px;
 	padding-left: 0px;
@@ -830,14 +799,34 @@ transform:scale(1)
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+.textbox {
+	width: 100%;
+	height: auto;
+	display: none;
+	vertical-align: bottom;
+	background-color: rgba(28,28,28,0.5);
+	color: #fff;
+	bottom: 4px;
+	position: absolute;
+	padding: 20px 0;
+}
+
 @media (max-width:991px) {
 	.day {
 		height: calc(100vw / 2);
 	}
+	.textbox {
+		bottom: 0px;
+	}
 }
+
 @media (max-width:767px) {
 	.day {
 		height: calc(100vw);
+	}
+	#w2_day1,
+	#w3_day2 {
+		display: none;
 	}
 }
 .day:hover {
@@ -847,24 +836,149 @@ transform:scale(1)
 	transition-property: opacity;
 	transition-duration: 0.3s;
 }
-.textbox {
+.day img {
 	width: 100%;
 	height: auto;
-	display: none;
-	vertical-align: bottom;
-	background-color: rgba(28,28,28,0.5);
-	color: #fff;
-	bottom: 0;
-	position: absolute;
 }
 
-/* carousel */
+.wday {
+	margin-bottom: 0px
+}
+/* ------------------------------------------ carousel ------------------------------------------ */
+
+/* Carousel Fading slide */
+.carousel-fade .carousel-inner {
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+.carousel-fade .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+}
+.carousel-fade .next.left,
+.carousel-fade .prev.right,
+.carousel-fade .item.active {
+	opacity: 1;
+}
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+/* Safari Fix */
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-fade .carousel-inner > .item.next,
+	.carousel-fade .carousel-inner > .item.active.right {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.prev,
+	.carousel-fade .carousel-inner > .item.active.left {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.next.left,
+	.carousel-fade .carousel-inner > .item.prev.right,
+	.carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* Carousel Control custom */
+.carousel-control .control-icon {
+	font-size: 48px;
+	height: 30px;
+	margin-top: -15px;
+	width: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+}
+.carousel-control .prev {
+	margin-left: -15px;
+	left: 50%;
+} /* Prev */
+.carousel-control .next {
+	margin-right: -15px;
+	right: 50%;
+} /* Next */
+/* Removing BS background */
+.carousel .control-box {
+	opacity: 0;
+}
+a.carousel-control.left {
+	left: 0;
+	background: none;
+	border: 0;
+}
+a.carousel-control.right {
+	right: 0;
+	background: none;
+	border: 0;
+}
+/* Animation */
+.control-box, a.carousel-control,
+.carousel-indicators li {
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;/* hardware acceleration causes Bootstrap carousel controlbox margin error in webkit */
+  /* Assigning animation to indicator li will make slides flicker */
+}
+/* Hover animation */
+.carousel:hover .control-box {
+	opacity: 1;
+}
+.carousel:hover a.carousel-control.left {
+	left: 15px;
+}
+.carousel:hover a.carousel-control.right {
+	right: 15px;
+}
+/* Carouse Indicator */
+.carousel-indicators li.active,
+.carousel-indicators li {
+	border: 0;
+}
+.carousel-indicators li {
+	background: #666;
+	margin: 0 3px;
+	width: 12px;
+	height: 12px;
+}
+.carousel-indicators li.active {
+	background: #fff;
+	margin: 0 3px;
+}
+
+.carousel-caption {
+	margin-top: -70px;
+	padding: 0px;
+	bottom: unset;
+}
+.carousel-caption h3 {
+	font-weight: 700;
+	color: #101010;
+}
+
 .carousel-indicators {
-    top: -30px !important;
+	top: -30px !important;
 	bottom: unset !important;
 }
 .carousel-control {
-    width: 2% !important;
+	width: 2% !important;
 }
 .carousel-control.left,
 .carousel-control.right {
