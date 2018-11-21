@@ -569,7 +569,15 @@ transform:scale(1)
 .ap-winamp {
 	background: url("../img/play-winamp.png");
 }
-.soc-fb, .soc-tw, .soc-gplus, .soc-youtube, .soc-mixcloud, .soc-instagram, .soc-4sqr, .ap-tunein, .ap-winamp {
+.soc-fb,
+.soc-tw,
+.soc-gplus,
+.soc-youtube,
+.soc-mixcloud,
+.soc-instagram,
+.soc-4sqr,
+.soc-tunein,
+.soc-playlist {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -579,7 +587,15 @@ transform:scale(1)
 	z-index: 1;
 	overflow: visible
 }
-.soc-fb:before, .soc-tw:before, .soc-gplus:before, .soc-youtube:before, .soc-mixcloud:before, .soc-instagram:before, .soc-4sqr:before, .ap-tunein:before, .ap-winamp:before {
+.soc-fb:before,
+.soc-tw:before,
+.soc-gplus:before,
+.soc-youtube:before,
+.soc-mixcloud:before,
+.soc-instagram:before,
+.soc-4sqr:before,
+.soc-tunein:before,
+.soc-playlist:before {
 	content: '';
 	z-index: -1;
 	position: absolute;
@@ -595,68 +611,81 @@ transform:scale(1)
 	-webkit-transition: all .3s;
 	transition: all .3s
 }
-.soc-fb:hover:before, .soc-tw:hover:before, .soc-gplus:hover:before, .soc-youtube:hover:before, .soc-mixcloud:hover:before, .soc-instagram:hover:before, .soc-4sqr:hover:before, .ap-tunein:hover:before, .ap-winamp:hover:before {
+.soc-fb:hover:before,
+.soc-tw:hover:before,
+.soc-gplus:hover:before,
+.soc-youtube:hover:before,
+.soc-mixcloud:hover:before,
+.soc-instagram:hover:before,
+.soc-4sqr:hover:before,
+.soc-tunein:hover:before,
+.soc-playlist:hover:before {
 	width: 64px;
 	height: 64px;
 	opacity: 1
 }
 .soc-fb {
-	background: #0a83d7 url("../img/socials/fb.png") center center no-repeat;
-}
-.soc-fb:before {
-	background-image: url("../img/socials/fb-holo.png");
+	background: #f0f0f0 url("../img/socials/fb.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-tw {
-	background: #00bff6 url("../img/socials/tw.png") center center no-repeat;
-}
-.soc-tw:before {
-	background-image: url("../img/socials/tw-holo.png");
+	background: #f0f0f0 url("../img/socials/tw.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-gplus {
-	background: #ff2424 url("../img/socials/gplus.png") center center no-repeat;
-}
-.soc-gplus:before {
-	background-image: url("../img/socials/gplus-holo.png");
+	background: #f0f0f0 url("../img/socials/gplus.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-youtube {
-	background: #f10000 url("../img/socials/youtube.png") center center no-repeat;
-}
-.soc-youtube:before {
-	background-image: url("../img/socials/youtube-holo.png");
+	background: #f0f0f0 url("../img/socials/youtube.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-4sqr {
-	background: #f84675 url("../img/socials/4sqr.png") center center no-repeat;
-}
-.soc-4sqr:before {
-	background-image: url("../img/socials/4sqr-holo.png");
+	background: #f0f0f0 url("../img/socials/4sqr.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-mixcloud {
-	background: #44B6B6 url("../img/socials/mixcloud.png") center center no-repeat;
-}
-.soc-mixcloud:before {
-	background-image: url("../img/socials/mixcloud-holo.png");
+	background: #f0f0f0 url("../img/socials/mixcloud.svg") center center no-repeat;
+	background-size: 50%;
 }
 .soc-instagram {
-	background: #156193 url("../img/socials/instagram.png") center center no-repeat;
+	background: #f0f0f0 url("../img/socials/instagram.svg") center center no-repeat;
+	background-size: 50%;
 }
-.soc-instagram:before {
-	background-image: url("../img/socials/instagram-holo.png");
+.soc-playlist {
+	background: #f0f0f0 url("../img/socials/playlist.svg") center center no-repeat;
+	background-size: 50%;
+}
+.soc-tunein {
+	background: #f0f0f0 url("../img/socials/tunein.svg") center center no-repeat;
+	background-size: 50%;
+}
+.soc-tw:before,
+.soc-gplus:before,
+.soc-youtube:before,
+.soc-4sqr:before,
+.soc-mixcloud:before,
+.soc-instagram:before,
+.soc-playlist:before,
+.soc-fb:before,
+.soc-tunein:before {
+	background-image: url("../img/socials/holo.png");
 }
 
 @media (max-width:940px) {
-.socials {
-	margin-top: 20px;
-	margin-right: 0;
-	margin-left: 0;
-	margin-bottom: 40px;
-	text-align: center;
-	position: relative;
-	top: auto;
-	left: auto
-}
-.soc-fb,  .soc-tw,  .soc-gplus,  .soc-youtube,  .soc-mixcloud,  .soc-instagram,  .soc-4sqr,  .ap-tunein,  .ap-winamp {
-	display: inline-block
-}
+	.socials {
+		margin-top: 20px;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 40px;
+		text-align: center;
+		position: relative;
+		top: auto;
+		left: auto
+	}
+	.soc-fb,  .soc-tw,  .soc-gplus,  .soc-youtube,  .soc-mixcloud,  .soc-instagram,  .soc-4sqr,  .soc-tunein,  .soc-playlist {
+		display: inline-block
+	}
 }
 .partners {
 	text-align: center;
