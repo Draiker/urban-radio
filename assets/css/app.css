@@ -323,7 +323,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .main-logo {
 	width: 150px;
 	height: 57px;
-	background: url("../img/main-logo.png");
+	background: url("../img/logo-usr.svg");
 	text-indent: -99999px;
 	margin: 38px auto 50px
 }
@@ -556,19 +556,6 @@ transform:scale(1)
 	left: 5px;
 	top: 5px
 }
-.ap-tunein, .ap-winamp {
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	margin-left: 10px
-}
-.ap-tunein {
-	background: url("../img/play-tunin.png");
-}
-.ap-winamp {
-	background: url("../img/play-winamp.png");
-}
 .soc-fb,
 .soc-tw,
 .soc-gplus,
@@ -694,18 +681,18 @@ transform:scale(1)
 	z-index: 5
 }
 .partner-warm-city, .partner-m-joy, .partner-us-100 {
-	width: 200px;
-	height: 60px;
-	display: inline-block
+	width: 204px;
+	height: 100px;
+	display: inline-block;
 }
 .partner-warm-city {
-	background: url("../img/warm-city.png") center center no-repeat;
+	background: url("../img/logo-tm.svg") center center no-repeat;
 }
 .partner-m-joy {
-	background: url("../img/m-joy.png") center center no-repeat;
+	background: url("../img/logo-mjoy.svg") center center no-repeat;
 }
 .partner-us-100 {
-	background: url("../img/us-100.png") center center no-repeat;
+	background: url("../img/logo-us100.svg") center center no-repeat;
 }
 
 @media (max-width:940px) {
