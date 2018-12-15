@@ -321,9 +321,11 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 */
 .main-logo {
-	width: 150px;
+	/*width: 150px;*/
+	width: 143px;
 	height: 57px;
-	background: url("../img/logo-usr.svg");
+	/*background: url("../img/logo-usr.svg");*/
+	background: url("../img/logo-uxr.svg");
 	text-indent: -99999px;
 	margin: 38px auto 50px
 }
