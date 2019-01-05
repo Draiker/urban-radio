@@ -65,52 +65,30 @@
 		<script src="assets/js/fastclick.js"></script>
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 		<script type="text/javascript">
-			
-			$.easing.def = "easeOutQuart";
-			
-			function programTextShow( event ) {
-					$(this).find('.textbox')
-						.slideToggle(300, "easeOutQuart");
-			}
-			
 			$(document).ready(function(){
 				
-				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-					$('#myCarousel').removeClass("carousel-fade");
-					$('#myCarousel').carousel({
-						interval: false
+				updatePlaylist = function (songlist) {
+					for (i = 0, total = songlist.length; i < total; i++) {
+						var item = songlist[i];
+						if (item.status == 'current') {
+							$('.js-singer').html(item.artist);
+							$('.js-song').html(item.title);
+						}
+					}
+				};
+
+				getPlaylist = function () {
+					$.getJSON("http://mjoy.ua/radio/station/urban-space-radio/playlist.json", function (songlist) {
+						updatePlaylist(songlist);
 					});
-					$("#myCarousel").swiperight(function() { $(this).carousel('prev'); });
-					$("#myCarousel").swipeleft(function() { $(this).carousel('next'); });
-				} else {
-					$('#myCarousel').carousel({
-						interval: 6000
-					})
-				}
-				
-				$("#programs_cal").on("mouseenter", ".day", programTextShow);
-				$("#programs_cal").on("mouseleave", ".day", programTextShow);
-				$("#programs_cal").on("mouseenter", ".day5", programTextShow);
-				$("#programs_cal").on("mouseleave", ".day5", programTextShow);
-				
-				var e = $(".js-singer"),
-					t = $(".js-song"),
-					n = void 0,
-					i = void 0,
-					s = function (s) {
-						var r = s.query.results.json;
-						i !== r.artist && (e.html(r.artist), i = r.artist), n !== r.title && (t.html(r.title), n = r.title)
-					},
-					r = function () {
-						$.getJSON("http://query.yahooapis.com/v1/public/yql", {
-							q: 'select * from json where url="http://mjoy.ua/radio/station/urban-space-radio/playlist.json"',
-							format: "json"
-						}).done(s)
-					};
-				r(), setInterval(r, 5e3);
-				var a = {
-						mp3: "http://stream.mjoy.ua:8000/urban-space-radio",
-						m4a: "http://stream.mjoy.ua:8000/urban-space-radio-aac"
+				};
+
+				getPlaylist();
+				setInterval(getPlaylist, 5000);
+
+				var streamURL = {
+						mp3: "http://stream.mjoy.ua:8000/urban-space-radio?cache-buster=" + Date.now(),
+						m4a: "http://stream.mjoy.ua:8000/urban-space-radio-aac?cache-buster=" + Date.now()
 					},
 					o = !1,
 					l = navigator.userAgent.toLowerCase().indexOf("chrome") > -1,
@@ -119,13 +97,16 @@
 				
 				$("#jquery_jplayer_1").jPlayer({
 					ready: function () {
-						o = !0, $(this).jPlayer("setMedia", a).jPlayer("play")
+						o = !0, $(this).jPlayer("setMedia", streamURL).jPlayer("play")
 					},
 					pause: function () {
 						$(this).jPlayer("clearMedia")
 					},
+					ended: function () { // The $.jPlayer.event.ended event
+						$(this).jPlayer("play"); // Repeat the media
+					},
 					error: function (e) {
-						o && e.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET && $(this).jPlayer("setMedia", a).jPlayer("play")
+						o && e.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET && $(this).jPlayer("setMedia", streamURL).jPlayer("play")
 					},
 					swfPath: "http://jplayer.org/latest/dist/jplayer",
 					supplied: c ? "m4a,mp3" : "mp3",
