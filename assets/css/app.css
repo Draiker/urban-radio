@@ -331,12 +331,12 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 @media (max-width:940px) {
-.main-logo {
-	margin-top: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 50px
-}
+	.main-logo {
+		margin-top: 50px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 50px
+	}
 }
 .h-player {
 	background-color: rgba(0,0,0,.5);
@@ -679,7 +679,7 @@ transform:scale(1)
 .partners {
 	text-align: center;
 	position: relative;
-	margin-bottom: 50px;
+	margin: 100px auto 50px;
 	z-index: 5
 }
 .partner-warm-city, .partner-m-joy, .partner-us-100 {
