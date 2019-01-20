@@ -322,10 +322,10 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 */
 .main-logo {
 	/*width: 150px;*/
-	width: 215px;
-	height: 86px;
-	/*background: url("../img/logo-usr.svg");*/
-	background: url("../img/logo-uxr.svg");
+	width: 211px;
+	height: 80px;
+	background: url("../img/logo-usr.svg");
+	/*background: url("../img/logo-uxr.svg");*/
 	text-indent: -99999px;
 	margin: 100px auto 100px
 }
