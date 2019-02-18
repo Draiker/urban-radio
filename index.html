@@ -19,35 +19,51 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="socials">
-				<a href="https://www.facebook.com/urbanspaceradio" target="_blank" class="soc-fb"></a>
-				<a href="https://twitter.com/UrbanSpaceRadio" target="_blank" class="soc-tw"></a>
-				<a href="https://www.instagram.com/urban_space_radio" target="_blank" class="soc-instagram"></a>
-				<a href="https://www.mixcloud.com/UrbanSpaceRadio" target="_blank" class="soc-mixcloud"></a>
-				<a href="http://tunein.com/radio/Urban-Space-Radio-s246403" target="_blank" class="soc-tunein"></a>
-				<a href="http://stream.mjoy.ua:8000/urban-space-radio-aac.m3u" target="_blank" class="soc-playlist"></a>
-			</div>
-			<h1 class="main-logo">Urban Space Radio</h1>
-			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<div id="jp_container_1" role="application" aria-label="media player" class="h-player jp-audio-stream">
-				<div class="h-black"></div>
-				<div role="button" class="h-player__btn jp-play">
-					<div class="p-btn"><div class="p-btn__pause-cont"><div class="p-btn__pause"></div></div><div class="p-btn__play"></div></div>
+			<header class="header">
+				<div class="socials">
+					<a href="https://www.facebook.com/urbanspaceradio" target="_blank" class="soc-fb"></a>
+					<a href="https://twitter.com/UrbanSpaceRadio" target="_blank" class="soc-tw"></a>
+					<a href="https://www.instagram.com/urban_space_radio" target="_blank" class="soc-instagram"></a>
+					<a href="https://www.mixcloud.com/UrbanSpaceRadio" target="_blank" class="soc-mixcloud"></a>
+					<a href="http://tunein.com/radio/Urban-Space-Radio-s246403" target="_blank" class="soc-tunein"></a>
+					<a href="http://stream.mjoy.ua:8000/urban-space-radio-aac.m3u" target="_blank" class="soc-playlist"></a>
 				</div>
-				<div class="h-player__desc">
-					<div class="h-player__now-title">Зараз в ефірі</div>
-					<div class="h-player__now-singer-and-song">
-						<div class="h-player__now-singer js-singer"></div>
-						<div class="h-player__now-song js-song"></div>
+				<h1 class="main-logo">
+					<img src="assets/img/logo-usr_white.svg" width="211" height="80">
+					<span>Urban Space Radio</span>
+				</h1>
+			</header>
+			<section class="section1">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div id="jp_container_1" role="application" aria-label="media player" class="h-player jp-audio-stream">
+					<div class="h-black"></div>
+					<div role="button" class="h-player__btn jp-play">
+						<div class="p-btn"><div class="p-btn__pause-cont"><div class="p-btn__pause"></div></div><div class="p-btn__play"></div></div>
 					</div>
+					<div class="h-player__desc">
+						<div class="h-player__now-title">Зараз в ефірі</div>
+						<div class="h-player__now-singer-and-song">
+							<div class="h-player__now-singer js-singer"></div>
+							<div class="h-player__now-song js-song"></div>
+						</div>
+					</div>
+					<div class="jp-no-solution">Оновіть браузер</div>
 				</div>
-				<div class="jp-no-solution">Оновіть браузер</div>
-			</div>
-			<div class="partners">
-				<a href="http://warm.if.ua" target="_blank" class="partner-warm-city"></a>
-				<a href="http://urbanspace.if.ua" target="_blank" class="partner-us-100"></a>
-				<a href="http://mjoy.ua" target="_blank" class="partner-m-joy"></a>
-			</div>
+			</section>
+			<section class="section2">
+				<div class="howtosay">
+					<h1 class="howtosay-logo">
+						<img src="assets/img/logo-howtosay_white.svg" width="250">
+						<p>23 лютого</p>
+						<p>21:00</p>
+					</h1>
+				</div>
+				<div class="partners">
+					<a href="http://warm.if.ua" target="_blank" class="partner-warm-city"></a>
+					<a href="http://urbanspace.if.ua" target="_blank" class="partner-us-100"></a>
+					<a href="http://mjoy.ua" target="_blank" class="partner-m-joy"></a>
+				</div>
+			</section>
 		</div>
 		<footer class="main-footer">
 			<div class="footer-wrap">
@@ -63,7 +79,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js" media="handheld"></script>
 		<script src="assets/js/jplayer/jquery.jplayer.min.js"></script>
 		<script src="assets/js/fastclick.js"></script>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,500,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&subset=cyrillic" rel="stylesheet">
 		<script type="text/javascript">
 			$(document).ready(function(){
 				

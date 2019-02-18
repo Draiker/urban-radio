@@ -1,4 +1,3 @@
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -280,62 +279,69 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	margin-left: 0;
 	margin-bottom: -16px
 }
+
+
 .wrap {
+	background: #e0e0e0;
 	min-height: 100%;
 	text-align: center;
-	background: #adadad url("../img/bg.jpg") top center no-repeat;
 	overflow: auto;
 	padding-bottom: 94px
 }
+.wrap .header {
+	background: url("../img/bg_e03_header_desktop.jpg") top center no-repeat;
+	background-size: 100%;
+	height: 280px;
+}
+.wrap .section1 {
+	background: url("../img/bg_e03_section1_desktop.jpg") center center no-repeat;
+	background-size: 100%;
+	height: 248px;
+	padding-top: 65px;
+}
+.wrap .section2 {
+	background: url("../img/bg_e03_section2_desktop.jpg") top center no-repeat;
+	background-size: 100%;
+	padding: 50px 0 50px;
+}
 
 @media (max-width:940px) {
-.wrap {
-	overflow: hidden;
-	padding-bottom: 131px
-}
-}
-/*
-.additional-players {
-	float: right;
-	margin: 30px 30px 0 0
-}
-.ap-tunein, .ap-winamp {
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	margin-left: 10px
-}
-.ap-tunein {
-	background: url("../img/play-tunin.png");
-}
-.ap-winamp {
-	background: url("../img/play-winamp.png");
-}
-*/
-/*
-@media (max-width:940px) {
-	.additional-players {
-		margin: 15px 15px 0 0
+	.wrap {
+		overflow: hidden;
+		padding-bottom: 131px;
+	}
+	.wrap .header {
+		background: url("../img/bg_e03_section2_mob.jpg") top center no-repeat;
+		background-size: 100%;
+		height: 230px;
+	}
+	.wrap .section1 {
+		background: url("../img/bg_e03_section1_mob.jpg") center center no-repeat;
+		background-size: 100%;
+	}
+	.wrap .section2 {
+		background: url("../img/bg_e03_section2_mob.jpg") top center no-repeat;
+		background-size: 100%;
 	}
 }
-*/
+@media (max-width:378px) {
+	.wrap .header {
+		height: 270px;
+	}
+}
+
 .main-logo {
-	/*width: 150px;*/
 	width: 211px;
-	height: 80px;
-	background: url("../img/logo-usr.svg");
-	/*background: url("../img/logo-uxr.svg");*/
-	text-indent: -99999px;
-	margin: 100px auto 100px
+	padding: 74px 0 0 0;
+	margin: auto;
+}
+.main-logo span {
+	color: rgba(0,0,0,0);
 }
 
 @media (max-width:940px) {
 	.main-logo {
-		margin-top: 50px;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 50px
+		padding: 10px 0 0 0;
 	}
 }
 .h-player {
@@ -663,10 +669,8 @@ transform:scale(1)
 
 @media (max-width:940px) {
 	.socials {
-		margin-top: 20px;
-		margin-right: 0;
-		margin-left: 0;
-		margin-bottom: 40px;
+		margin: 0px;
+		padding-bottom: 10px;
 		text-align: center;
 		position: relative;
 		top: auto;
@@ -676,25 +680,42 @@ transform:scale(1)
 		display: inline-block
 	}
 }
+
+.howtosay,
 .partners {
 	text-align: center;
 	position: relative;
-	margin: 400px auto 50px;
 	z-index: 5
 }
+.howtosay {
+	margin-bottom: 50px;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 500;
+	filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.howtosay .howtosay-logo img {
+	margin-bottom: 20px;
+}
+.howtosay .howtosay-logo span {
+	font-size: 0.7em;
+}
+
 .partner-warm-city, .partner-m-joy, .partner-us-100 {
 	width: 204px;
 	height: 100px;
 	display: inline-block;
 }
 .partner-warm-city {
-	background: url("../img/logo-tm.svg") center center no-repeat;
+	background: url("../img/logo-tm_white.svg") center center no-repeat;
 }
 .partner-m-joy {
-	background: url("../img/logo-mjoy.svg") center center no-repeat;
+	background: url("../img/logo-mjoy_white.svg") center center no-repeat;
 }
 .partner-us-100 {
-	background: url("../img/logo-us100.svg") center center no-repeat;
+	background: url("../img/logo-us100_white.svg") center center no-repeat;
 }
 
 @media (max-width:940px) {
