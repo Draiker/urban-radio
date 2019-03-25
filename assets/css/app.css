@@ -289,18 +289,18 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	padding-bottom: 94px
 }
 .wrap .header {
-	background: url("../img/bg_e03_header_desktop.jpg") top center no-repeat;
+	background: url("../img/bg_spring2019_header_desktop.jpg") top center no-repeat;
 	background-size: 100%;
 	height: 280px;
 }
 .wrap .section1 {
-	background: url("../img/bg_e03_section1_desktop.jpg") center center no-repeat;
+	background: url("../img/bg_spring2019_section1_desktop.jpg") center center no-repeat;
 	background-size: 100%;
 	height: 248px;
 	padding-top: 65px;
 }
 .wrap .section2 {
-	background: url("../img/bg_e03_section2_desktop.jpg") top center no-repeat;
+	background: url("../img/bg_spring2019_section2_desktop.jpg") top center no-repeat;
 	background-size: 100%;
 	padding: 50px 0 50px;
 }
@@ -311,16 +311,16 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 		padding-bottom: 131px;
 	}
 	.wrap .header {
-		background: url("../img/bg_e03_section2_mob.jpg") top center no-repeat;
+		background: url("../img/bg_spring2019_header_mob.jpg") top center no-repeat;
 		background-size: 100%;
 		height: 230px;
 	}
 	.wrap .section1 {
-		background: url("../img/bg_e03_section1_mob.jpg") center center no-repeat;
+		background: url("../img/bg_spring2019_section1_mob.jpg") center center no-repeat;
 		background-size: 100%;
 	}
 	.wrap .section2 {
-		background: url("../img/bg_e03_section2_mob.jpg") top center no-repeat;
+		background: url("../img/bg_spring2019_section2_mob.jpg") top center repeat-y;
 		background-size: 100%;
 	}
 }
@@ -620,39 +620,39 @@ transform:scale(1)
 	opacity: 1
 }
 .soc-fb {
-	background: #f0f0f0 url("../img/socials/fb.svg") center center no-repeat;
+	background: #101010 url("../img/socials/fb.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-tw {
-	background: #f0f0f0 url("../img/socials/tw.svg") center center no-repeat;
+	background: #101010 url("../img/socials/tw.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-gplus {
-	background: #f0f0f0 url("../img/socials/gplus.svg") center center no-repeat;
+	background: #101010 url("../img/socials/gplus.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-youtube {
-	background: #f0f0f0 url("../img/socials/youtube.svg") center center no-repeat;
+	background: #101010 url("../img/socials/youtube.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-4sqr {
-	background: #f0f0f0 url("../img/socials/4sqr.svg") center center no-repeat;
+	background: #101010 url("../img/socials/4sqr.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-mixcloud {
-	background: #f0f0f0 url("../img/socials/mixcloud.svg") center center no-repeat;
+	background: #101010 url("../img/socials/mixcloud.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-instagram {
-	background: #f0f0f0 url("../img/socials/instagram.svg") center center no-repeat;
+	background: #101010 url("../img/socials/instagram.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-playlist {
-	background: #f0f0f0 url("../img/socials/playlist.svg") center center no-repeat;
+	background: #101010 url("../img/socials/playlist.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-tunein {
-	background: #f0f0f0 url("../img/socials/tunein.svg") center center no-repeat;
+	background: #101010 url("../img/socials/tunein.svg") center center no-repeat;
 	background-size: 50%;
 }
 .soc-tw:before,
@@ -681,25 +681,23 @@ transform:scale(1)
 	}
 }
 
-.howtosay,
+.fifth-season,
 .partners {
 	text-align: center;
 	position: relative;
 	z-index: 5
 }
-.howtosay {
-	margin-bottom: 50px;
-	color: #fff;
+.fifth-season {
+	margin-bottom: 200px;
+	color: #101010;
 	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
-	font-weight: 500;
-	filter: alpha(opacity=70);
-    opacity: 0.7;
+	font-weight: 700;
 }
-.howtosay .howtosay-logo img {
+.fifth-season .fifth-season-logo img {
 	margin-bottom: 20px;
 }
-.howtosay .howtosay-logo span {
+.fifth-season .fifth-season-logo span {
 	font-size: 0.7em;
 }
 
@@ -709,13 +707,13 @@ transform:scale(1)
 	display: inline-block;
 }
 .partner-warm-city {
-	background: url("../img/logo-tm_white.svg") center center no-repeat;
+	background: url("../img/logo-tm.svg") center center no-repeat;
 }
 .partner-m-joy {
-	background: url("../img/logo-mjoy_white.svg") center center no-repeat;
+	background: url("../img/logo-mjoy.svg") center center no-repeat;
 }
 .partner-us-100 {
-	background: url("../img/logo-us100_white.svg") center center no-repeat;
+	background: url("../img/logo-us100.svg") center center no-repeat;
 }
 
 @media (max-width:940px) {
@@ -767,291 +765,4 @@ transform:scale(1)
 }
 .ui-loader {
 	display: none;
-}
-.programs {
-	padding-left: 0px;
-	padding-right: 0px;
-	margin: 100px 0 50px;
-}
-.week {
-	padding-top: 50px;
-}
-/*
-#w1_day1 {
-	background: url("../img/programs/pr1/w1.jpg");
-	background-size: contain;
-}
-#w1_day2 {
-	background: url("../img/programs/pr2/w1.jpg");
-	background-size: contain;
-}
-#w1_day3 {
-	background: url("../img/programs/pr3/w1.jpg");
-	background-size: contain;
-}
-#w1_day4 {
-	background: url("../img/programs/pr4/w1.jpg");
-	background-size: contain;
-}
-#w2_day2 {
-	background: url("../img/programs/pr2/w2.jpg");
-	background-size: contain;
-}
-#w2_day3 {
-	background: url("../img/programs/pr3/w2.jpg");
-	background-size: contain;
-}
-#w2_day4 {
-	background: url("../img/programs/pr4/w2.jpg");
-	background-size: contain;
-}
-#w3_day1 {
-	background: url("../img/programs/pr1/w3.jpg");
-	background-size: contain;
-}
-#w3_day3 {
-	background: url("../img/programs/pr3/w3.jpg");
-	background-size: contain;
-}
-#w3_day4 {
-	background: url("../img/programs/pr4/w3.jpg");
-	background-size: contain;
-}
-#w1_day1,
-#w1_day2,
-#w1_day3,
-#w1_day4,
-#w2_day2,
-#w2_day3,
-#w2_day4,
-#w3_day1,
-#w3_day3,
-#w3_day4 {
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-*/
-.w20 {
-	width: 20%;
-}
-@media (max-width: 991px) {
-	.w20 {
-		width: 50%;
-	}
-}
-.day {
-	padding-right: 0px;
-	padding-left: 0px;
-	height: calc(100vw / 4);
-	border: 0px #c1c1c1 solid;
-	opacity: 0.3;
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-.day5 {
-	padding-right: 0px;
-	padding-left: 0px;
-	height: calc(100vw / 5);
-	border: 0px #c1c1c1 solid;
-	opacity: 0.3;
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-.textbox {
-	width: 100%;
-	height: auto;
-	display: none;
-	vertical-align: bottom;
-	background-color: rgba(28,28,28,0.5);
-	color: #fff;
-	bottom: 4px;
-	position: absolute;
-	padding: 20px 0 0;
-}
-.textbox iframe,
-.textbox .break {
-	margin-top: 20px;
-}
-
-
-@media (max-width:991px) {
-	.day, .day5 {
-		height: calc(100vw / 2);
-	}
-	.textbox {
-		bottom: 0px;
-	}
-}
-
-@media (max-width:767px) {
-	.day, .day5 {
-		height: calc(100vw);
-	}
-	#w2_day1,
-	#w3_day2 {
-		display: none;
-	}
-}
-.day:hover, .day5:hover {
-	opacity: 1;
-}
-.day, .day:hover, .day5, .day5:hover {
-	transition-property: opacity;
-	transition-duration: 0.3s;
-}
-.day img, .day5 img {
-	width: 100%;
-	height: auto;
-}
-
-.wday,
-.time {
-	margin-bottom: 0px;
-}
-/* ------------------------------------------ carousel ------------------------------------------ */
-
-/* Carousel Fading slide */
-.carousel-fade .carousel-inner {
-}
-.carousel-fade .carousel-control {
-	z-index: 2;
-}
-.carousel-fade .item {
-	opacity: 0;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	-o-transition-property: opacity;
-	transition-property: opacity;
-}
-.carousel-fade .next.left,
-.carousel-fade .prev.right,
-.carousel-fade .item.active {
-	opacity: 1;
-}
-.carousel-fade .active.left,
-.carousel-fade .active.right {
-	left: 0;
-	opacity: 0;
-	z-index: 1;
-}
-
-/* Safari Fix */
-@media all and (transform-3d), (-webkit-transform-3d) {
-	.carousel-fade .carousel-inner > .item.next,
-	.carousel-fade .carousel-inner > .item.active.right {
-		opacity: 0;
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	.carousel-fade .carousel-inner > .item.prev,
-	.carousel-fade .carousel-inner > .item.active.left {
-		opacity: 0;
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	.carousel-fade .carousel-inner > .item.next.left,
-	.carousel-fade .carousel-inner > .item.prev.right,
-	.carousel-fade .carousel-inner > .item.active {
-		opacity: 1;
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-/* Carousel Control custom */
-.carousel-control .control-icon {
-	font-size: 48px;
-	height: 30px;
-	margin-top: -15px;
-	width: 30px;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	z-index: 5;
-}
-.carousel-control .prev {
-	margin-left: -15px;
-	left: 50%;
-} /* Prev */
-.carousel-control .next {
-	margin-right: -15px;
-	right: 50%;
-} /* Next */
-/* Removing BS background */
-.carousel .control-box {
-	opacity: 0;
-}
-a.carousel-control.left {
-	left: 0;
-	background: none;
-	border: 0;
-}
-a.carousel-control.right {
-	right: 0;
-	background: none;
-	border: 0;
-}
-/* Animation */
-.control-box, a.carousel-control,
-.carousel-indicators li {
-	-webkit-transition: all 250ms ease;
-	-moz-transition: all 250ms ease;
-	-ms-transition: all 250ms ease;
-	-o-transition: all 250ms ease;
-	transition: all 250ms ease;/* hardware acceleration causes Bootstrap carousel controlbox margin error in webkit */
-  /* Assigning animation to indicator li will make slides flicker */
-}
-/* Hover animation */
-.carousel:hover .control-box {
-	opacity: 1;
-}
-.carousel:hover a.carousel-control.left {
-	left: 15px;
-}
-.carousel:hover a.carousel-control.right {
-	right: 15px;
-}
-/* Carouse Indicator */
-.carousel-indicators li.active,
-.carousel-indicators li {
-	border: 0;
-}
-.carousel-indicators li {
-	background: #666;
-	margin: 0 3px;
-	width: 12px;
-	height: 12px;
-}
-.carousel-indicators li.active {
-	background: #fff;
-	margin: 0 3px;
-}
-
-.carousel-caption {
-	margin-top: -70px;
-	padding: 0px;
-	bottom: unset;
-}
-.carousel-caption h3 {
-	font-weight: 700;
-	color: #101010;
-}
-
-.carousel-indicators {
-	top: -30px !important;
-	bottom: unset !important;
-}
-.carousel-control {
-	width: 2% !important;
-}
-.carousel-control.left,
-.carousel-control.right {
-	background: none;
-}
-@media only screen and (max-width: 991px) {
-	.carousel-control {
-		display: none;
-	}
 }
